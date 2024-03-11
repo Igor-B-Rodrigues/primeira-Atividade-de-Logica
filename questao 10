@@ -1,0 +1,73 @@
+programa {
+  funcao inicio() {
+    cadeia a, g, combustivel
+    real precoAlcool, precoGasolina, desconto,litrosAlcool, litrosGasolina
+    inteiro precoTotal
+
+  
+    escreva("\nCombustível selecionado \t\t Preço")
+    escreva("\nÁlcool \t\t\t\t\t\t\t\t\t\tR$ 3,79")
+    escreva("\nGasolina \t\t\t\t\t\t\t\t\tR$ 6,59")
+    escreva("\n=== fim da tabela===")
+
+    escreva("\nSelecione o combustível desejado: ")
+    leia(combustivel)
+
+    escolha (combustivel) {
+    caso "a":
+    escreva("Digite a quantidade de litros álcool: ")
+    leia(litrosAlcool) 
+
+    se ( litrosAlcool <= 25) {
+  desconto = 0.2
+  } senao se ( litrosAlcool > 25 ){
+  desconto = 0.4
+  }
+  precoTotal = litrosAlcool * desconto * 3.79
+  escreva("\n O preço a se pagar é:R$ ", precoTotal)
+  pare
+
+  caso "a":
+      escreva("Digite a quantidade em litros  álcool: ")
+     leia(litrosAlcool) 
+
+  se ( litrosAlcool <= 25) {
+  desconto = 0.2
+  } senao se ( litrosAlcool > 25 ){
+  desconto = 0.4
+  }
+  precoTotal = litrosAlcool * desconto * 3.79
+  escreva("\nO preço a se pagar é:R$ ", precoTotal)
+  pare
+
+  caso "g":
+      escreva("Digite a quantidade em litros de gasolina: ")
+      leia(litrosGasolina) 
+
+  se ( litrosGasolina <= 25) {
+  desconto = 0.3
+  } senao se ( litrosGasolina > 25 ){
+  desconto = 0.5
+  }
+  precoTotal = litrosGasolina * desconto * 6.59
+  escreva("\nO preço a se pagar é:R$ ", precoTotal)
+  pare
+  caso "g":
+  escreva("Digite a quantidade em litros de gasolina: ")
+  leia(litrosGasolina) 
+
+  se ( litrosGasolina <= 25) {
+  desconto = 0.3
+  } senao se ( litrosGasolina > 25 ){
+  desconto = 0.5
+  }
+  precoTotal = litrosGasolina * desconto * 6.59
+  escreva("\nO preço a se pagar é:R$ ", precoTotal)
+  pare
+   }
+  }
+}
+
+    
+  }
+}
